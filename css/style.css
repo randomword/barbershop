@@ -1,0 +1,12 @@
+html,
+body{
+  width: 1122px;
+  height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #000000 url("../image/background-all.png") no-repeat 50% 3px;
+  background-size: 1122px auto;
+}

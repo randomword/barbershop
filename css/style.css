@@ -4,12 +4,17 @@ body{
   min-height: 1750px;
   margin: 0;
   padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 body{
-/**  background: #000000 url("../image/body-bg.jpg") no-repeat 50% 3px;**/
-  background: #000000 url("../image/background-all.png") no-repeat 50% 3px;
-  background-size: 1122px auto;
+  background: #000000 url("../image/body-bg.jpg") no-repeat center top;
+  /**background: #000000 url("../image/background-all.png") no-repeat 50% 3px;**/
+  /**background-size: 1122px auto;**/
 }
 
 .clearfix::after{
@@ -35,12 +40,21 @@ body{
   width: 780px;
   min-height: 72px;
   list-style: none;
-  background: rgba(255, 0, 0, 0.3);
 }
 
 .main-menu > li{
-  display: inline;
-  padding: 0 20px 0 20px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-menu a{
+  display: block;
+  padding: 29px 20px;
+}
+
+.main-menu a:hover{
+  background-color: #242424;
 }
 
 .main-menu > li > a{
@@ -50,9 +64,41 @@ body{
 
 .btn-login{
   float: right;
+  position: relative;
   width: 140px;
   min-height: 72px;
-  background: rgba(0, 255, 0, 0.3);
+  color: #ffffff;
+}
+
+.btn-login::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../image/enter-btn.png");
+}
+
+.btn-login:hover::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 17px;
+  height: 16px;
+  background-image: url("../image/enter-btn-hover.png");
+}
+
+.btn-enter{
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  padding: 27px 20px 27px 50px;
+}
+
+.btn-enter:hover{
+  background-color: #242424;
 }
 
 .index-logo{
@@ -71,12 +117,22 @@ body{
   margin-bottom: 60px;
   color: #ffffff;
   text-align: center;
-
-  background: rgba(255, 0, 0, 0.3);
 }
 
 .features-item:last-child{
   padding-right: 0px;
+}
+
+.features-name{
+  font-size: 30px;
+}
+
+.diamond{
+  width: 15px;
+  height: 15px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  transform: rotate(45deg);
 }
 
 .index-content{
@@ -98,6 +154,12 @@ body{
   min-height: 400px;
   width: 300px;
   margin-right: 80px;
+}
+
+.news-preview{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer{

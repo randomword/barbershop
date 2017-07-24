@@ -1,12 +1,134 @@
 html,
 body{
-  width: 1122px;
-  height: 1750px;
+  min-width: 1122px;
+  min-height: 1750px;
   margin: 0;
   padding: 0;
 }
 
 body{
+/**  background: #000000 url("../image/body-bg.jpg") no-repeat 50% 3px;**/
   background: #000000 url("../image/background-all.png") no-repeat 50% 3px;
   background-size: 1122px auto;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.header{
+  margin-bottom: 60px;
+  background: #000000;
+}
+
+.container{
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main-menu{
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 780px;
+  min-height: 72px;
+  list-style: none;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.main-menu > li{
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+.main-menu > li > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-login{
+  float: right;
+  width: 140px;
+  min-height: 72px;
+  background: rgba(0, 255, 0, 0.3);
+}
+
+.index-logo{
+  width: 368px;
+  height: 204px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.features-item{
+  float: left;
+  width: 300px;
+  min-height: 175px;
+  padding: 0 8px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  text-align: center;
+
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.features-item:last-child{
+  padding-right: 0px;
+}
+
+.index-content{
+  margin-bottom: 35px;
+  padding-top: 50px;
+  background: #f8f5f2;
+  background-image: url("../image/content-bg.gif");
+}
+
+.index-content-left{
+  float: left;
+  min-height: 400px;
+  width: 330px;
+  margin-left: 80px;
+}
+
+.index-content-right{
+  float: right;
+  min-height: 400px;
+  width: 300px;
+  margin-right: 80px;
+}
+
+.footer{
+  min-height: 120px;
+  padding-top: 60px;
+  color: #ffffff;
+  background: #232323;
+  background-image: url("../image/footer-bg.gif");
+}
+
+.footer-contacts{
+  float: left;
+  width: 380px;
+  padding: 0 10px 0 0;
+  text-align: left;
+}
+
+.footer-contacts > a{
+  color: #ffffff;
+}
+
+.footer-social{
+  float: left;
+  width: 140px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.footer-copyright{
+  float: right;
+  width: 140px;
+  padding: 0 0 0 10px;
+  text-align: center;
 }

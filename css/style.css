@@ -138,8 +138,9 @@ body{
 .index-content{
   margin-bottom: 35px;
   padding-top: 50px;
-  background: #f8f5f2;
-  background-image: url("../image/content-bg.gif");
+  background: url("../image/index-content-line.png") no-repeat center,
+              #f8f5f2 url("../image/content-bg.gif");
+
 }
 
 .index-content-left{
@@ -156,10 +157,59 @@ body{
   margin-right: 80px;
 }
 
+.index-content-title{
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .news-preview{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.news-preview > li{
+  margin-bottom: 25px;
+}
+
+.news-preview > li > p{
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+time{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 32px;
+  margin-right: 15px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallery-content{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
+}
+
+.gallery-content > img{
+  border: 8px solid #ffffff;
 }
 
 .footer{

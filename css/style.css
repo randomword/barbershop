@@ -150,11 +150,19 @@ body{
   margin-left: 80px;
 }
 
+.index-content-left > p{
+  margin-bottom: 25px;
+}
+
 .index-content-right{
   float: right;
   min-height: 400px;
   width: 300px;
   margin-right: 80px;
+}
+
+.index-content-right > p{
+  margin-bottom: 25px;
 }
 
 .index-content-title{
@@ -202,6 +210,27 @@ time{
   text-transform: uppercase;
 }
 
+.btn:hover,
+.btn:active{
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled{
+  cursor: default;
+  opacity: 0.3;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover{
+  background-color: #000000;
+}
+
+.gallery{
+  position: relative;
+  height: 260px;
+}
+
 .gallery-content{
   margin: 0;
   padding: 0;
@@ -210,6 +239,46 @@ time{
 
 .gallery-content > img{
   border: 8px solid #ffffff;
+}
+
+.gallery .btn{
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  margin: 0;
+}
+
+.gallery-prev{
+  left: 0;
+}
+
+.gallery-next{
+  right: 0;
+}
+
+.appointment-form input{
+  float: left;
+  width: 106px;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.appointment-form input:nth-child(2n){
+  margin-right: 0;
+}
+
+.appointment-form .btn{
+  clear: both;
+  width: 100%;
 }
 
 .footer{
@@ -231,11 +300,53 @@ time{
   color: #ffffff;
 }
 
+.footer-contacts > a:hover{
+  text-decoration: none;
+}
+
 .footer-social{
   float: left;
   width: 140px;
   padding: 0 10px;
   text-align: center;
+}
+
+.footer-social > p{
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 2px;
+  font-size: 0px;
+  background: #000000 url("../image/social-sprite.png") no-repeat center;
+}
+
+.social-btn-vk{
+  background-position: -3px -2px;
+}
+
+.social-btn-fb{
+  background-position: -51px -2px;
+}
+
+.social-btn-inst{
+  background-position: -100px -2px;
+}
+
+.social-btn-vk:hover{
+  background-position: -3px -65px;
+}
+
+.social-btn-fb:hover{
+  background-position: -51px -65px;
+}
+
+.social-btn-inst:hover{
+  background-position: -100px -65px;
 }
 
 .footer-copyright{

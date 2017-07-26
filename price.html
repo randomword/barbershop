@@ -2,47 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Барбершоп "Бородинский"</title>
+  <title>Barbershop "Borodinski"</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header clearfix">
     <div class="container">
-      <img class="small-logo" src="image/small-logo.jpg" width="140px" height="40px">
-      <ul class="main-menu">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a class="active" href="#">Прайс-лист</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+      <a href="index.html">
+        <img class="small-logo" src="image/logo-small.png" width="111px" height="24px">
+      </a>
+      <ul class="price-menu">
+        <li><a class="inactive" href="#">Информация</a></li>
+        <li><a class="inactive" href="#">Новости</a></li>
+        <li>
+          <a class="active" href="#">
+            Прайс-лист
+            <div class="active-menu"></div>
+          </a>
+        </li>
+        <li><a class="inactive" href="#">Магазин</a></li>
+        <li><a class="inactive" href="#">Контакты</a></li>
       </ul>
-    </div>
-    <div class="btn-login">
-      <a class="btn-enter" href="#">Вход</a>
+      <div class="btn-login">
+        <a class="btn-enter" href="#">Вход</a>
+      </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container clearfix">
     <div class="page-title">
       <h2>Средства для ухода</h2>
       <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Прайс-лист</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <div class="diamond-small"></div>
+        <li>Прайс-лист</li>
       </ul>
     </div>
     <div class="attention-block">
-      <h1>Истинно мужская классика</h1><hr>
+      <div class="attention-text"><h1>Истинно мужская классика</h1></div>
+      <div class="attention-line"></div>
     </div>
     <div class="price-content">
       <div class="price-content-left">
-        <h2>Мы используем только лучшие средства:</h2>
+        <h2>Мы используем только<br>
+            лучшие средства:</h2>
         <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
+          <div class="diamond-small"></div>
+          <li>Baxter of California</li><br>
+          <div class="diamond-small"></div>
+          <li>Mr Natty</li><br>
+          <div class="diamond-small"></div>
+          <li>Suavecito</li><br>
+          <div class="diamond-small"></div>
           <li>Malin+Goetz</li>
         </ul>
       </div>
       <div class="price-content-right">
-        <h2>Цены на услуги наших мастеров:</h2>
+        <h2>Цены на услуги<br>
+            наших мастеров:</h2>
         <table>
           <tr>
             <td>Стрижка</td>

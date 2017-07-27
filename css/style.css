@@ -18,6 +18,14 @@ body{
   /**background-size: 1122px auto;**/
 }
 
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 24px;
+}
+
 .clearfix::after{
   content: "";
   display: table;
@@ -508,4 +516,93 @@ time{
 .price-content-right td:nth-child(odd){
   width: 215px;
   padding-left: 15px;
+}
+
+/*for shop.html*/
+.shop-side-menu{
+  float: left;
+  width: 180px;
+}
+
+.shop-side-menu b{
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.shop-side-menu button{
+  margin-top: 195px;
+}
+
+.shop-list{
+  float: right;
+  width: 700px;
+  margin-top: 35px;
+}
+
+.shop-item{
+  display: inline-block;
+  width: 220px;
+  height: 287px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.shop-item p{
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  text-transform: none;
+}
+
+.shop-preview{
+  width: 220px;
+  height: 165px;
+}
+
+.buy{
+  width: 187px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+}
+
+.buy span{
+  display: inline-block;
+  width: 108px;
+  text-align: center;
+}
+
+.btn-buy{
+  margin: 0;
+  padding: 10px 17px;
+}
+
+.paginator{
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.paginator a{
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 7px;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+}
+
+.paginator a:hover,
+.paginator a:active{
+  background-color: #663d15;
+}
+
+.paginator .active,
+.paginator .active:hover{
+  color: #000000;
+  background-color: #ffffff;
+  cursor: default;
 }

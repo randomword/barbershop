@@ -2,119 +2,133 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Барбершоп "Бородинский"</title>
+  <title>Barbershop "Borodinski"</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header clearfix">
     <div class="container">
-      <img class="small-logo" src="image/small-logo.jpg" width="140px" height="40px">
-      <ul class="main-menu">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Прайс-лист</a></li>
-        <li><a class="active" href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+      <a href="index.html">
+        <img class="small-logo" src="image/logo-small.png" width="111px" height="24px">
+      </a>
+      <ul class="price-menu">
+        <li><a class="inactive" href="#">Информация</a></li>
+        <li><a class="inactive" href="#">Новости</a></li>
+        <li><a class="inactive" href="price.html">Прайс-лист</a></li>
+        <li>
+          <a class="active" href="#">
+            Магазин
+            <div class="active-menu"></div>
+          </a>
+        </li>
+        <li><a class="inactive" href="#">Контакты</a></li>
       </ul>
-    </div>
-    <div class="btn-login">
-      <a class="btn-enter" href="#">Вход</a>
+      <div class="btn-login">
+        <a class="btn-enter" href="#">Вход</a>
+      </div>
     </div>
   </header>
   <main class="container">
     <div class="page-title">
       <h2>Средства для ухода</h2>
       <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Средства для ухода</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <div class="diamond-small"></div>
+        <li><a href="shop.html">Магазин</a></li>
+        <div class="diamond-small"></div>
+        <li>Средства для ухода</li>
       </ul>
     </div>
-    <div class="shop-side-menu">
-      <form class="shop-parameters" action="https://echo.htmlacademy.ru"
-            method="post">
-        <b>Производители:</b><br>
-        <input type="checkbox" name="manuf-1" checked>Baxter of california<br>
-        <input type="checkbox" name="manuf-2">Mr Natty<br>
-        <input type="checkbox" name="manuf-3" checked>Suavecito<br>
-        <input type="checkbox" name="manuf-4">Malin+Goetz<br>
-        <input type="checkbox" name="manuf-5">Murray's<br>
-        <input type="checkbox" name="manuf-6" checked>American crew<br>
-        <b>Группы товаров:</b><br>
-        <button type="submit" class="btn">Показать</button>
-      </form>
-    </div>
-    <div class="shop-list">
-      <div class="shop-item">
-        <img class="shop-preview" src="image/shop-item-1.jpg">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of California"
-        </p>
-        <div class="buy">
-          <span>2 900 руб.</span>
-          <button type="button" class="btn btn-buy">Купить</button>
-        </div>
+    <div class="shop-content clearfix">
+      <div class="shop-side-menu">
+        <form class="shop-parameters" action="https://echo.htmlacademy.ru"
+              method="post">
+          <b>Производители:</b>
+          <input type="checkbox" name="manuf-1" checked>Baxter of california<br>
+          <input type="checkbox" name="manuf-2">Mr Natty<br>
+          <input type="checkbox" name="manuf-3" checked>Suavecito<br>
+          <input type="checkbox" name="manuf-4">Malin+Goetz<br>
+          <input type="checkbox" name="manuf-5">Murray's<br>
+          <input type="checkbox" name="manuf-6" checked>American crew<br>
+          <b>Группы товаров:</b><br>
+          <button type="submit" class="btn">Показать</button>
+        </form>
       </div>
-      <div class="shop-item">
-        <img class="shop-preview" src="image/shop-item-1.jpg">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of California"
-        </p>
-        <div class="buy">
-          <span>2 900 руб.</span>
-          <button type="button" class="btn btn-buy">Купить</button>
+      <div class="shop-list">
+        <div class="shop-item">
+          <img class="shop-preview" src="image/goods-1.jpg">
+          <p>
+            Набор для путешествий<br>
+            "BAXTER OF CALIFORNIA"
+          </p>
+          <div class="buy">
+            <span>2 900 руб.</span>
+            <button type="button" class="btn btn-buy">Купить</button>
+          </div>
         </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-preview" src="image/shop-item-1.jpg">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of California"
-        </p>
-        <div class="buy">
-          <span>2 900 руб.</span>
-          <button type="button" class="btn btn-buy">Купить</button>
+        <div class="shop-item">
+          <img class="shop-preview" src="image/goods-2.jpg">
+          <p>
+            Увлажняющий кондиционер<br>
+            "BAXTER OF CALIFORNIA"
+          </p>
+          <div class="buy">
+            <span>750 руб.</span>
+            <button type="button" class="btn btn-buy">Купить</button>
+          </div>
         </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-preview" src="image/shop-item-1.jpg">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of California"
-        </p>
-        <div class="buy">
-          <span>2 900 руб.</span>
-          <button type="button" class="btn btn-buy">Купить</button>
+        <div class="shop-item">
+          <img class="shop-preview" src="image/goods-3.jpg">
+          <p>
+            Гель для волос<br>
+            "SUAVECITO"
+          </p>
+          <div class="buy">
+            <span>290 руб.</span>
+            <button type="button" class="btn btn-buy">Купить</button>
+          </div>
         </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-preview" src="image/shop-item-1.jpg">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of California"
-        </p>
-        <div class="buy">
-          <span>2 900 руб.</span>
-          <button type="button" class="btn btn-buy">Купить</button>
+        <div class="shop-item">
+          <img class="shop-preview" src="image/goods-4.jpg">
+          <p>
+            Глина для укладки волос<br>
+            "AMERICAN CREW"
+          </p>
+          <div class="buy">
+            <span>500 руб.</span>
+            <button type="button" class="btn btn-buy">Купить</button>
+          </div>
         </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-preview" src="image/shop-item-1.jpg">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of California"
-        </p>
-        <div class="buy">
-          <span>2 900 руб.</span>
-          <button type="button" class="btn btn-buy">Купить</button>
+        <div class="shop-item">
+          <img class="shop-preview" src="image/goods-5.jpg">
+          <p>
+            Гель для волос<br>
+            "AMERICAN CREW"
+          </p>
+          <div class="buy">
+            <span>300 руб.</span>
+            <button type="button" class="btn btn-buy">Купить</button>
+          </div>
         </div>
-      </div>
-      <div class="paginator">
-        <a href="#">1</a>
-        <a class="active" href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
+        <div class="shop-item">
+          <img class="shop-preview" src="image/goods-6.jpg">
+          <p>
+            Набор для бритья<br>
+            "BAXTER OF CALIFORNIA"
+          </p>
+          <div class="buy">
+            <span>3 900 руб.</span>
+            <button type="button" class="btn btn-buy">Купить</button>
+          </div>
+        </div>
+        <div class="paginator">
+          <a href="#">1</a>
+          <a class="active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+        </div>
       </div>
     </div>
   </main>

@@ -100,7 +100,7 @@
           Пн - Пт: С 10:00 до 22:00<br>
           Сб - Вс: С 10:00 до 19:00
         </p>
-        <a href="#" class="btn">Как проехать</a>
+        <a href="#" class="btn open-map">Как проехать</a>
         <a href="#" class="btn">Обратная связь</a>
       </div>
       <div class="index-content-right">
@@ -125,7 +125,7 @@
       <section class="footer-contacts">
         Барбершоп "Бородинский"<br>
         Адрес: г. Санкт-Петербург, Б.Конюшенная, д.19/8<br>
-        <a href="#">Как нас найти?</a><br>
+        <a class="open-map" href="#">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
       </section>
       <section class="footer-social">
@@ -147,8 +147,8 @@
     <h2 class="modal-content-title">Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" mtehod="post">
-      <input class="icon-user" type="text" name="login" placeholder="Логин">
-      <input class="icon-password" type="password" name="password" paceholder="Пароль">
+      <input class="icon-user" type="text" name="login" placeholder="Логин" required>
+      <input class="icon-password" type="password" name="password" paceholder="Пароль" required>
       <label class="shop-checkbox">
         <input type="checkbox" name="remember">
         <span class="checkbox-indicator"></span>
@@ -162,8 +162,18 @@
     <button class="modal-content-close" type="button" title="Закрыть">
       Закрыть
     </button>
-    <div id="map"></div>
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.
+      5989424124036!2d30.320894616145978!3d59.93879686904783!2m3!1f0!2f0!3f0!3m
+      2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z
+      0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3Qut
+      GCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1501591680670"
+      width="766" height="561" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+    </div>
   </div>
   <div class="modal-overlay"></div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

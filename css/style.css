@@ -634,7 +634,17 @@ time{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.shop-list .third-item{
+.shop-list ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shop-list li{
+  display: inline-block;
+}
+
+.shop-list li:nth-child(3n) > div{
   margin-right: 0;
 }
 

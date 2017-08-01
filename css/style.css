@@ -175,9 +175,10 @@ h3{
 
 .index-content-left{
   float: left;
-  min-height: 400px;
+  min-height: 350px;
   width: 330px;
   margin-left: 80px;
+  padding-bottom: 50px;
 }
 
 .index-content-left > p{
@@ -336,7 +337,7 @@ time{
 
 .footer-social{
   float: left;
-  width: 140px;
+  min-width: 140px;
   padding: 0 10px;
   text-align: center;
 }
@@ -529,6 +530,14 @@ time{
   padding-left: 15px;
 }
 
+.price-content-right > p{
+  padding-top: 57px;
+}
+
+.price-content-right > p + p{
+  padding-top: 0;
+}
+
 /*for shop.html*/
 .shop-side-menu{
   float: left;
@@ -641,6 +650,11 @@ time{
   text-transform: none;
 }
 
+.shop-item a{
+  text-decoration: none;
+  color: #000000;
+}
+
 .shop-preview{
   width: 220px;
   height: 165px;
@@ -668,7 +682,8 @@ time{
   margin-bottom: 50px;
 }
 
-.paginator a{
+.paginator a,
+.paginator span{
   display: inline-block;
   padding: 8px 16px;
   margin-right: 7px;
@@ -682,8 +697,7 @@ time{
   background-color: #663d15;
 }
 
-.paginator .active,
-.paginator .active:hover{
+.paginator span{
   color: #000000;
   background-color: #ffffff;
   cursor: default;

@@ -386,6 +386,16 @@ time{
   text-align: center;
 }
 
+.footer-copyright .btn{
+  padding-right: 20px;
+  padding-left: 25px;
+}
+
+.footer-copyright .btn:hover,
+.footer-copyright .btn:active{
+  background-color: #ffffff;
+  color: #000000;
+}
 /*for price.html*/
 
 .price-menu{
@@ -399,7 +409,7 @@ time{
 
 .small-logo{
   float: left;
-  padding: 24px 20px;
+  padding: 27px 20px;
   margin: 0;
 }
 
@@ -522,7 +532,19 @@ time{
 /*for shop.html*/
 .shop-side-menu{
   float: left;
-  width: 180px;
+  width: 220px;
+}
+
+.shop-side-menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-side-menu li{
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
 }
 
 .shop-side-menu b{
@@ -538,8 +560,9 @@ time{
 }
 
 .shop-list{
-  float: right;
+  float: left;
   width: 700px;
+  padding: 0;
   margin-top: 35px;
 }
 
@@ -560,7 +583,7 @@ time{
 .shop-checkbox input[type="checkbox"]+
 .checkbox-indicator{
   position: absolute;
-  top: -3px;
+  top: 0px;
   left: 0;
   width: 17px;
   height: 17px;
@@ -594,9 +617,20 @@ time{
   display: inline-block;
   width: 220px;
   height: 287px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
+  margin-right: 17px;
+  margin-bottom: 20px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.shop-list .third-item{
+  margin-right: 0;
+}
+
+.shop-item:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .shop-item p{
@@ -841,4 +875,8 @@ time{
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+input:focus{
+  border-color: #663d15;
 }

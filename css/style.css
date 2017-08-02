@@ -388,8 +388,14 @@ time{
   margin-top: -12px
 }
 
+.footer-copyright p{
+  display: inline-block;
+  text-align: center;
+  padding-right: 10px;
+}
+
 .footer-copyright .btn{
-  padding-right: 20px;
+  padding-right: 25px;
   padding-left: 25px;
 }
 
@@ -927,4 +933,23 @@ time{
 
 input:focus{
   border-color: #663d15;
+}
+
+/*for login.html*/
+.login-page{
+  width: 300px;
+  margin: 40px auto;
+}
+
+/*for map.html*/
+.map-addr{
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.map-page{
+  width: 766px;
+  height: 561px;
+  background: #e9e5dc url("../image/map.jpg");
 }
